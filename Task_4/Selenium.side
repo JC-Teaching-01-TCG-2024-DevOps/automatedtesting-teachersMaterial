@@ -1,0 +1,116 @@
+{
+  "id": "47a7a1ca-406b-4022-b8bd-cc00e4cc4a56",
+  "version": "2.0",
+  "name": "ClassProject",
+  "url": "https://www.amazon.co.uk/",
+  "tests": [{
+    "id": "1d975b5f-f6e2-4577-aafd-8fc450dce976",
+    "name": "amazon",
+    "commands": [{
+      "id": "0198ebb1-f993-4dc5-96c3-943d567b62b3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.co.uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d404c3c-6532-4052-8644-3914e700833f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1196x778",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c17abfc7-eff8-430e-b5a6-b8a62aebc9c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26908288-076b-4142-b560-58946d20cc0c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e0a0ab-e258-451c-82b5-0a48cfd28c9a",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "iphone"
+    }, {
+      "id": "a645e4ed-a3d0-4cae-b2e1-21cf4e868297",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f63f645d-b013-42bf-8d30-a5e2f966554e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Vouchers",
+      "targets": [
+        ["linkText=Vouchers", "linkText"],
+        ["css=#nav-subnav > .nav-a:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='nav-subnav']/a[6]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vouchers-coupons/b/?ie=UTF8&node=5522783031&ref_=sv_uk_5')]", "xpath:href"],
+        ["xpath=//div[6]/div/a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eead348e-70de-4a3b-a6eb-2595120aa836",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Amazon.co.uk : iphone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "016ddd6f-37db-415d-a88b-8995d63af657",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dcd12a90-27d3-4586-af0c-edcdf55af54b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1d975b5f-f6e2-4577-aafd-8fc450dce976"]
+  }],
+  "urls": ["https://www.amazon.co.uk/"],
+  "plugins": []
+}

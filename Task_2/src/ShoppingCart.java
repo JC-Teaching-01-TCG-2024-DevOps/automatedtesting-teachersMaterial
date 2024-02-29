@@ -3,11 +3,11 @@ import java.util.Arrays;
 public class ShoppingCart {
     public static int arr[] = { 1, 2, 3, 4, 5, 6 };
 
-    static int cartLength() {
+    public static int cartLength() {
         return arr.length;
     }
 
-    static int[] cartAdd(int newNum) {
+    public static int[] cartAdd(int newNum) {
         int n = cartLength();
         int newArr[] = new int[n + 1];
         for (int i = 0; i < n; i++) {
@@ -18,7 +18,7 @@ public class ShoppingCart {
         return arr;
     }
 
-    static int[] cartRemove(int removeIndex) {
+    public static int[] cartRemove(int removeIndex) {
         int n = cartLength();
         int newArr[] = new int[n - 1];
         for (int i = 0, k = 0; i < n; i++) {
